@@ -1,0 +1,37 @@
+# 忽略所有构建输出目录
+target/
+*/target/
+
+# 忽略 IDE 特定文件
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+bin/
+*.swp
+*.swo
+
+# 忽略日志文件
+*.log
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略测试相关的特定文件
+*/test-output/
+*/surefire-reports/
+*/failsafe-reports/
+
+# 忽略依赖下载的临时文件
+dependency-reduced-pom.xml
+
+# 忽略 Maven 包装器日志
+.mvn/wrapper/maven-wrapper.log
+
+# 忽略环境特定文件
+*.env
+*.properties
