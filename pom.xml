@@ -26,7 +26,6 @@
 					<release>17</release>
 				</configuration>
 			</plugin>
-			<!-- 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -35,12 +34,11 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>Main</mainClass>
+							<mainClass>ChinaBankATM</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
 			</plugin>
-			-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
@@ -51,13 +49,6 @@
 						<goals>
 							<goal>shade</goal>
 						</goals>
-						<configuration>
-							<transformers>
-								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>ChinaBankATM</mainClass> <!-- 替换为你的主类 -->
-								</transformer>
-							</transformers>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
