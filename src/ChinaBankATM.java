@@ -5,13 +5,13 @@ import java.io.IOException;
 //ChinaBankAccount类负责银行账户存取款等功能。
 public class ChinaBankATM {
 	// 类成员函数
-	ChinaBankATMMenu menu;
+	IChinaBankATMMenu menu;
 	ChinaBankAccount account;
 
 	// 构造函数，调用ChinaBankATMMenu、BankAccount类的构造函数
 	// 初始化menu、ba类成员对象。
 	public ChinaBankATM() throws Exception {
-		menu = new ChinaBankATMMenu();
+		menu = new ChinaBankATMMenuText();
 		account = new ChinaBankAccount("  刘醒", "先生", "123678", 1000);
 	}
 
